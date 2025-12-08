@@ -1,216 +1,645 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piyush Goel | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-  <header>
-    <div class="logo">PG</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <div class="hero-container">
-      <div class="hero-left">
-        <img src="assets/piyushgoelimage.png" alt="Piyush Goel Profile Picture" id="profileImage">
-        <div class="floating-elements">
-          <span class="floating-element python">Python</span>
-          <span class="floating-element ai">AI/ML</span>
-          <span class="floating-element automation">IoT</span>
-          <span class="floating-element raspberry">Raspberry Pi</span>
-          <span class="floating-element react">React</span>
-        </div>
-      </div>
-      
-      <div class="hero-content">
-        <div class="title-container" id="titleContainer">
-          <h1 id="mainName">Piyush Goel</h1>
-          <h2>Python Power Automation and Machine Learning</h2>
-          <h3>Based in Meerut, India</h3>
-        </div>
-        
-        <div class="stats-container">
-          <div class="stat-item">
-            <span class="stat-number">2020</span>
-            <span class="stat-label">Coding Since</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">2</span>
-            <span class="stat-label">Years of Professional Experience</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">80+</span>
-            <span class="stat-label">Projects Completed</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">5</span>
-            <span class="stat-label">Hackathons Participated</span>
-          </div>
-        </div>
-        
-        <div class="cta-buttons">
-          <a href="#about" class="primary-btn">About Me</a>
-          <a href="#contact" class="secondary-btn">Contact Me</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section (hidden initially) -->
-  <section id="about">
-    <div class="about-container">
-      <h2 class="about-heading">About Me</h2>
-      <p class="about-para">
-      I'm a Python, Arduino, and AI/ML enthusiast currently at MIET Meerut (CSE, 2023–2027). From traffic automation with ESP32-CAM to deploying YOLO models on Raspberry Pi, I blend code, circuits, and creativity to build real-world systems. When I'm not building, I'm writing or mentoring. I believe in logic, impact, and just a bit of chaos.</p>
-    </div>
-  </section>
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <div class="container">
-    <h2 class="section-heading">Skills & Technologies</h2>
-    <div class="skills-grid">
-      
-      <div class="skill-category card">
-        <h3 class="skill-heading">Programming Languages</h3>
-        <div class="skill-items">
-          <div class="skill-item">Python</div>
-          <div class="skill-item">JavaScript</div>
-          <div class="skill-item">HTML/CSS</div>
-        </div>
-      </div>
-      
-      <div class="skill-category card">
-        <h3 class="skill-heading">Frameworks & Libraries</h3>
-        <div class="skill-items">
-          <div class="skill-item">React.js</div>
-          <div class="skill-item">Tkinter</div>
-          <div class="skill-item">OpenCV</div>
-          <div class="skill-item">YOLO</div>
-        </div>
-      </div>
-      
-      <div class="skill-category card">
-        <h3 class="skill-heading">Tools & Technologies</h3>
-        <div class="skill-items">
-          <div class="skill-item">Git</div>
-          <div class="skill-item">Raspberry Pi</div>
-          <div class="skill-item">ESP32</div>
-          <div class="skill-item">Neon.tech</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section id="projects">
-  <h2 class="section-heading">Projects</h2>
-  <div class="projects-flex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Goel | Portfolio</title>
+    <meta name="description" content="Portfolio of Piyush Goel - Python Power Automation and Machine Learning Engineer">
     
-    <div class="project-card">
-      <img src="assets/vizolane.png" alt="Project 1 Screenshot">
-      <div class="project-content">
-        <h3>Vizolane</h3>
-        <p>Real-time AI signal control using YOLO and ESP32-CAM.</p>
-        <a href="https://vizolane.com" target="_blank">Visit Site</a>
-      </div>
-    </div>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <div class="project-card">
-      <img src="assets/b.techwala.png" alt="Project 2 Screenshot">
-      <div class="project-content">
-        <h3>btechwala</h3>
-        <p>Student resource hub for notes, questions & past papers.</p>
-        <a href="https://btechwala.github.io" target="_blank">Visit Site</a>
-      </div>
-    </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- <div class="project-card">
-      <img src="assets/project3.png" alt="Project 3 Screenshot">
-      <div class="project-content">
-        <h3>Virtual Try-On AI</h3>
-        <p>Body keypoint-based clothing try-on with pose estimation.</p>
-        <a href="https://github.com/piyushgoel6124/virtual-tryon" target="_blank">Explore</a>
-      </div>
-    </div> -->
-
-  </div>
-</section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="section-heading">Get In Touch</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:pg06122004@gmail.com">pg06122004@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/piyushgoel6124" target="_blank">linkedin.com/in/piyushgoel6124</a>
-          </div>
-          <div class="contact-item">
-            
-            <a href="https://github.com/piyushgoel6124" target="_blank"><i class="fab fa-github"></i> github.com/piyushgoel6124</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Piyush Goel. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Floating elements animation
-    document.querySelectorAll('.floating-element').forEach((el, index) => {
-      el.style.animationDelay = `${index * 0.5}s`;
-    });
-
-    // Typing effect function
-    function typeText(element, text, speed = 40) {
-      let i = 0;
-      function type() {
-        if (i < text.length) {
-          element.textContent += text.charAt(i);
-          i++;
-          setTimeout(type, speed);
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        bg: '#080808',
+                        surface: '#111111',
+                        surfaceHighlight: '#1A1A1A',
+                        primary: '#3b82f6', // Royal Blue
+                        primaryDark: '#2563eb',
+                        text: '#E2E8F0',
+                        textMuted: '#94A3B8'
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(59, 130, 246, 0.15)',
+                        'card': '0 10px 30px -10px rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
         }
-      }
-      element.textContent = '';
-      type();
-    }
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        const offset = -80;
-        const top = target.getBoundingClientRect().top + window.pageYOffset + offset;
-        window.scrollTo({
-          top,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-</script>
+    </script>
 
+    <style>
+        body {
+            background-color: #080808;
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080808;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Specific Component Styles */
+        .hero-circle {
+            background: radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, rgba(8, 8, 8, 0) 70%);
+        }
+        
+        .social-icon-btn {
+            background: #1A1A1A;
+            color: #94A3B8;
+            transition: all 0.3s ease;
+        }
+        .social-icon-btn:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        .service-card {
+            background: #111111;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            background: #161616;
+            transform: translateY(-5px);
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            color: #94A3B8;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 w-full h-full -z-10 opacity-30"></canvas>
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-bg/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-2xl font-display font-bold text-white tracking-tight">
+                PG<span class="text-primary">.</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="#hero" class="nav-link text-sm">Home</a>
+                <a href="#about" class="nav-link text-sm">About</a>
+                <a href="#services" class="nav-link text-sm">Services</a>
+                <a href="#portfolio" class="nav-link text-sm">Portfolio</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-6 py-2.5 rounded-full border border-white/20 text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
+                    Contact me
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center gap-8 transition-all duration-300 translate-x-full opacity-0">
+            <a href="#hero" class="mobile-link text-3xl font-display font-bold text-white hover:text-primary">Home</a>
+            <a href="#about" class="mobile-link text-3xl font-display font-bold text-white hover:text-primary">About</a>
+            <a href="#services" class="mobile-link text-3xl font-display font-bold text-white hover:text-primary">Services</a>
+            <a href="#portfolio" class="mobile-link text-3xl font-display font-bold text-white hover:text-primary">Portfolio</a>
+            <a href="#contact" class="mobile-link text-3xl font-display font-bold text-white hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
+                
+                <!-- Left Content -->
+                <div class="order-2 lg:order-1 reveal active">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-white mb-6">
+                        Hi, I'm <span class="text-primary">Piyush</span>,<br>
+                        A Python Engineer <br>
+                        Based in India
+                    </h1>
+                    
+                    <p class="text-textMuted text-lg max-w-lg mb-8 leading-relaxed">
+                        I create intelligent systems using Python, AI/ML, and IoT. 
+                        From traffic automation to deploying models on edge devices.
+                    </p>
+                    
+                    <div class="flex items-center gap-4">
+                        <a href="#portfolio" class="px-8 py-4 bg-primary hover:bg-primaryDark text-white font-medium rounded-full transition-colors shadow-glow">
+                            Get my work
+                        </a>
+                        <a href="https://github.com/piyushgoel6124" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 hover:bg-white/5 transition-colors text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/piyushgoel6124" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 hover:bg-white/5 transition-colors text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual -->
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative reveal delay-200">
+                    <div class="relative w-[350px] h-[350px] md:w-[450px] md:h-[450px]">
+                        
+                        <!-- Dark Circle Background -->
+                        <div class="absolute inset-0 bg-[#111] rounded-full transform translate-x-4 translate-y-4"></div>
+                        <div class="absolute inset-0 bg-[#1A1A1A] rounded-full"></div>
+                        
+                        <!-- Blue Accent Arc -->
+                        <div class="absolute -inset-1 rounded-full border-2 border-primary/30 border-t-transparent border-l-transparent animate-spin-slow"></div>
+
+                        <!-- Image -->
+                        <div class="absolute inset-2 rounded-full overflow-hidden border-4 border-[#080808]">
+                            <img 
+                                src="https://raw.githubusercontent.com/piyushgoel6124/piyushgoel6124.github.io/main/assets/piyushgoelimage.png" 
+                                onerror="this.src='https://ui-avatars.com/api/?name=Piyush+Goel&background=0B0B0F&color=fff&size=500'"
+                                alt="Piyush Goel" 
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        <!-- Floating Icons Right -->
+                        <div class="absolute top-10 -right-4 md:-right-8 flex flex-col gap-4">
+                            <div class="social-icon-btn w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer" title="Python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="social-icon-btn w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer" title="AI/ML">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="social-icon-btn w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer" title="IoT">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+
+                        <!-- Badge -->
+                        <div class="absolute bottom-10 -left-4 bg-surface border border-white/5 p-3 rounded-xl flex items-center gap-3 shadow-2xl animate-float">
+                            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-textMuted">Experience</div>
+                                <div class="font-bold text-white">2+ Years</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-[#080808]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+                    
+                    <!-- Left Image -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-surfaceHighlight rounded-3xl transform -rotate-3 -z-10"></div>
+                        <div class="rounded-2xl overflow-hidden h-[500px] w-full border border-white/5 relative">
+                             <img 
+                               src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" 
+                               alt="Workspace" 
+                               class="w-full h-full object-cover"
+                             />
+                             <div class="absolute inset-0 bg-black/40"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div>
+                        <div class="text-primary font-bold text-sm tracking-widest uppercase mb-2">About Me</div>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+                            Get To Know Me <br>Better
+                        </h2>
+                        <p class="text-textMuted leading-relaxed mb-8">
+                            Hello! I'm Piyush, a passionate engineer with a knack for turning ideas into powerful digital and physical solutions. I blend code, circuits, and creativity to build real-world systems. When I'm not building, I'm writing or mentoring.
+                        </p>
+
+                        <div class="flex gap-12 mb-10">
+                            <div>
+                                <div class="text-4xl font-bold text-primary mb-1">2+</div>
+                                <div class="text-sm text-textMuted">Years of<br>Experience</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-primary mb-1">80+</div>
+                                <div class="text-sm text-textMuted">Projects<br>Completed</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-primary mb-1">5</div>
+                                <div class="text-sm text-textMuted">Hackathons<br>Participated</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6">
+                            <a href="#contact" class="px-8 py-3 bg-primary hover:bg-primaryDark text-white font-medium rounded-full transition-colors">
+                                Know more
+                            </a>
+                            <a href="https://github.com/piyushgoel6124" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-surfaceHighlight hover:bg-white/10 text-primary transition-colors">
+                                <i class="fas fa-play ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Skills Section -->
+        <section id="services" class="py-24 bg-surface/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <div class="text-primary font-bold text-sm tracking-widest uppercase mb-2">My Expertise</div>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white">Professional Services</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-100 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Python Development</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Writing efficient, clean Python code for automation, backends, and data processing tasks.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-200 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Machine Learning</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Building and deploying AI models using YOLO, TensorFlow, and OpenCV for real-world applications.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-300 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">IoT Solutions</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Integrating hardware like Raspberry Pi and ESP32 with software for automation and monitoring.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-100 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Web Development</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Creating responsive frontends with React and robust backends to power your applications.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-200 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Data Science</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Analyzing complex datasets using Pandas and NumPy to extract actionable insights.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="service-card p-8 rounded-2xl reveal delay-300 group">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Backend Engineering</h3>
+                        <p class="text-textMuted text-sm leading-relaxed">
+                            Designing scalable APIs and database architectures for high-performance applications.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-24 bg-[#080808]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+                    <div>
+                        <div class="text-primary font-bold text-sm tracking-widest uppercase mb-2">My Recent Portfolio</div>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white">Checkout My <br>Latest Works</h2>
+                    </div>
+                    <a href="https://github.com/piyushgoel6124" target="_blank" class="hidden md:inline-flex px-6 py-2.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary hover:text-white transition-all mt-6 md:mt-0">
+                        View all projects
+                    </a>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project 1 -->
+                    <div class="group rounded-xl overflow-hidden bg-surfaceHighlight reveal delay-100">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://raw.githubusercontent.com/piyushgoel6124/piyushgoel6124.github.io/main/assets/vizolane.png" alt="Vizolane" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://vizolane.com" target="_blank" class="px-6 py-2 bg-white text-black rounded-full font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-primary text-xs font-bold uppercase tracking-wider mb-2">AI / IoT</div>
+                            <h3 class="text-xl font-bold text-white mb-2">Vizolane</h3>
+                            <p class="text-textMuted text-sm">Real-time AI signal control using YOLO and ESP32-CAM.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="group rounded-xl overflow-hidden bg-surfaceHighlight reveal delay-200">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://raw.githubusercontent.com/piyushgoel6124/piyushgoel6124.github.io/main/assets/b.techwala.png" alt="B.TechWala" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://btechwala.github.io" target="_blank" class="px-6 py-2 bg-white text-black rounded-full font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Web / Education</div>
+                            <h3 class="text-xl font-bold text-white mb-2">B.TechWala</h3>
+                            <p class="text-textMuted text-sm">Resource hub for engineering students with notes & papers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="group rounded-xl overflow-hidden bg-surfaceHighlight reveal delay-300">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=600&auto=format&fit=crop" alt="Virtual Try-On" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="https://github.com/piyushgoel6124" target="_blank" class="px-6 py-2 bg-white text-black rounded-full font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">View Code</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Computer Vision</div>
+                            <h3 class="text-xl font-bold text-white mb-2">Virtual Try-On</h3>
+                            <p class="text-textMuted text-sm">Overlay clothing on users in real-time using pose estimation.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-8 text-center md:hidden">
+                    <a href="https://github.com/piyushgoel6124" class="px-6 py-3 rounded-full bg-primary/10 text-primary font-medium">View all projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <section id="contact" class="py-16 border-t border-white/5 bg-[#050505]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    
+                    <div class="text-center md:text-left">
+                        <a href="#" class="text-2xl font-display font-bold text-white tracking-tight block mb-2">
+                            PG<span class="text-primary">.</span>
+                        </a>
+                        <p class="text-textMuted text-sm">Building the future with code.</p>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <a href="#hero" class="text-sm text-textMuted hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="text-sm text-textMuted hover:text-white transition-colors">About</a>
+                        <a href="#services" class="text-sm text-textMuted hover:text-white transition-colors">Services</a>
+                        <a href="#portfolio" class="text-sm text-textMuted hover:text-white transition-colors">Portfolio</a>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="mailto:pg06122004@gmail.com" class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/piyushgoel6124" target="_blank" class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/piyushgoel6124" target="_blank" class="w-10 h-10 rounded-full bg-surfaceHighlight flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="text-center mt-12 text-xs text-textMuted">
+                    &copy; <span id="year"></span> Piyush Goel. All rights reserved.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Three.js Background
+        function initThreeJS() {
+            const canvas = document.getElementById('bg-canvas');
+            if(!canvas) return;
+
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+            
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            
+            // Particles
+            const geometry = new THREE.BufferGeometry();
+            const count = 2000;
+            const positions = new Float32Array(count * 3);
+            
+            for(let i = 0; i < count; i++) {
+                positions[i*3] = (Math.random() - 0.5) * 20;
+                positions[i*3+1] = (Math.random() - 0.5) * 20;
+                positions[i*3+2] = (Math.random() - 0.5) * 20;
+            }
+            
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            
+            const material = new THREE.PointsMaterial({
+                size: 0.02,
+                color: 0x3b82f6,
+                transparent: true,
+                opacity: 0.6,
+                sizeAttenuation: true
+            });
+            
+            const points = new THREE.Points(geometry, material);
+            scene.add(points);
+
+            camera.position.z = 5;
+
+            let mouseX = 0;
+            let mouseY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function animate() {
+                requestAnimationFrame(animate);
+                
+                // Base rotation
+                points.rotation.y += 0.002;
+                
+                // Parallax logic
+                // Normalize mouse position to -1 to 1
+                const nMouseX = (mouseX / window.innerWidth) * 2 - 1;
+                const nMouseY = -(mouseY / window.innerHeight) * 2 + 1; // Invert Y
+
+                // Rotate particle cloud based on mouse position (smoothly)
+                // We use linear interpolation (lerp) for smoothness
+                points.rotation.x += (nMouseY * 0.2 - points.rotation.x) * 0.05;
+                points.rotation.z += (nMouseX * 0.2 - points.rotation.z) * 0.05;
+
+                // Move camera slightly opposite to create depth
+                camera.position.x += (nMouseX * 0.5 - camera.position.x) * 0.05;
+                camera.position.y += (nMouseY * 0.5 - camera.position.y) * 0.05;
+                
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        }
+
+        // Scroll Reveal
+        function initScrollReveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const checkScroll = () => {
+                const triggerBottom = window.innerHeight * 0.85;
+                
+                reveals.forEach(reveal => {
+                    const top = reveal.getBoundingClientRect().top;
+                    const bottom = reveal.getBoundingClientRect().bottom;
+                    
+                    // Add active class if top of element is within viewport range
+                    // And element hasn't scrolled fully off the top
+                    if(top < triggerBottom && bottom > 0) {
+                        reveal.classList.add('active');
+                    } else {
+                        // Remove active class to reset animation when element is out of view
+                        reveal.classList.remove('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Check on load
+        }
+
+        // Mobile Menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = document.querySelectorAll('.mobile-link');
+            let isOpen = false;
+
+            const toggle = () => {
+                isOpen = !isOpen;
+                if(isOpen) {
+                    menu.classList.remove('translate-x-full', 'opacity-0');
+                    btn.innerHTML = '<i class="fas fa-times text-xl"></i>';
+                } else {
+                    menu.classList.add('translate-x-full', 'opacity-0');
+                    btn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+                }
+            }
+
+            btn.addEventListener('click', toggle);
+            links.forEach(link => link.addEventListener('click', toggle));
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initThreeJS();
+            initScrollReveal();
+            initMobileMenu();
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>
