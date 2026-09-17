@@ -1,0 +1,22 @@
+# Piyush Goel
+
+> Python Engineer, Machine Learning Developer, and IoT Automation Specialist based in India.
+
+## About
+Piyush Goel is a Python Engineer specializing in intelligent automation systems, machine learning model deployment on edge devices, computer vision, and IoT integrations.
+
+## Core Capabilities & Skills
+- **Languages:** Python, JavaScript, C++
+- **Machine Learning & AI:** Computer Vision, OpenCV, PyTorch, TensorFlow, Deep Learning, Edge AI
+- **Automation & Systems:** Traffic Automation, IoT Systems, Scripting, REST APIs
+- **Web Technologies:** HTML5, Tailwind CSS, Three.js, Node.js
+
+## Key Projects & Experience
+- **Traffic Automation System:** Intelligent traffic monitoring and automated dynamic signal management using Python and Computer Vision.
+- **Edge AI Deployment:** Lightweight machine learning models optimized for embedded IoT devices.
+- **IoT & Hardware Integration:** Sensor data pipeline automation and real-time telemetry processing.
+
+## Profiles & Canonical Links
+- Website: https://piyushgoel6124.github.io/
+- GitHub: https://github.com/piyushgoel6124
+- LinkedIn: https://linkedin.com/in/piyushgoel6124
